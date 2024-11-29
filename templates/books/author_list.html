@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="mb-4">Authors</h1>
+<ul class="list-group">
+    {% for author in authors %}
+    <li class="list-group-item">
+        <h5>{{ author.name }}</h5>
+        <p>{{ author.bio }}</p>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
